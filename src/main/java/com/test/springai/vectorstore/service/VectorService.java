@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
+import org.springframework.ai.vectorstore.filter.FilterExpressionBuilder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -37,6 +38,10 @@ public class VectorService {
                 SearchRequest.builder()
                         .query(query)
                         .topK(2)
+//                        .filterExpression(new FilterExpressionBuilder()
+//                                .eq("content", "The World is Big")
+//                                .build()
+//                        )
                         .build()
         );
         return results;
