@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class VectorStoreConfig {
 
     @Bean
-    VectorStore vectorStore(EmbeddingModel embeddingModel) {
+    VectorStore simpleVectorStore(EmbeddingModel embeddingModel) {
         return SimpleVectorStore.builder(embeddingModel).build();
     }
 }

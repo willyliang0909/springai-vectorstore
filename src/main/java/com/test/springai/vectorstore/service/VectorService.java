@@ -15,6 +15,9 @@ public class VectorService {
 
     private final VectorStore vectorStore;
 
+    //multi vectorStore
+    //private final VectorStore simpleVectorStore;
+
     public void addVector() {
         List<Document> documents = List.of(
                 new Document("Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!!", Map.of("meta1", "meta1")),
