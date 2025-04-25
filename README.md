@@ -1,5 +1,7 @@
 ## spring ai vector store
 
+[ref youtube](https://www.youtube.com/watch?v=azKntWC6d3w&list=PLO66QfE8gWT1lyNltpE73ee8mVn6C4xN9&index=3)
+
 ### simple vector store
 pom.xml
 ```xml
